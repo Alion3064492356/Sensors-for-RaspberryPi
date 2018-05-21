@@ -1,0 +1,11 @@
+
+8segment_digital_tube pin position:
+	pinA ====> 3
+	pinB ====> 5
+	pinC ====> 7
+	pinD ====> 8
+	pinE ====> 10
+	pinF ====> 11
+	pinG ====> 12
+	pinDP ====> 13
+	GND ===> GND

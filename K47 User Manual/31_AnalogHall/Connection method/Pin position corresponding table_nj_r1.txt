@@ -1,0 +1,17 @@
+
+ADC0382 pin position:
+	CS  =====  Raspberry Pi Pin 11
+	CLK =====  Raspberry Pi Pin 12
+	DIO =====  Raspberry Pi Pin  13
+	CH0 ===== Analog Hall Sensor Pin "S"
+	VCC ===== Raspberry Pi +5V
+	GND ===== Raspberry Pi GND
+
+Analog Hall pin position:
+	"S" === ADC0382 CH0
+	"+" ==== Raspberry Pi +5V
+	"-" ==== Raspberry Pi GND
+	
+LED Pin position:
+	"S" ==== Raspberry Pi Pin 16
+	"-" ==== Raspberry Pi GND

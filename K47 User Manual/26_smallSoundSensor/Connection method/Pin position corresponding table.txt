@@ -1,0 +1,11 @@
+AD0382 Pin position:
+	ADC_CS  =====  11
+	ADC_CLK =====  12
+	ADC_DIO =====  13
+	CH0 ===== analog in
+	VCC ===== +5v
+	GND ===== GND
+
+soundSensor pin position:
+	Sound_DO_PIN === 15
+	Sound_AO_PIN === CH0(pin of ADC0382)

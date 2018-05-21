@@ -1,0 +1,16 @@
+AD0382 Pin position:
+	ADC_CS  =====  11
+	ADC_CLK =====  12
+	ADC_DIO =====  13
+	CH0 ===== analog in
+	VCC ===== +5v
+	GND ===== GND
+
+Hall magnatic pin position:
+	"S" === CH0(pin of ADC0382)
+	"+" ==== +5V
+	"-" ==== GND
+	
+Led pin position:
+	LedPin==== 16
+	"-" ==== GND

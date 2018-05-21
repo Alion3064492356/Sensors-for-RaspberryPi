@@ -1,0 +1,7 @@
+TouchSensor pin position:
+	"SIG" =====> 11
+	"VCC" =====> +5v
+	"GND" =====> GND
+Led pin position:
+	"S" ======>16
+	"-" ======> GND
