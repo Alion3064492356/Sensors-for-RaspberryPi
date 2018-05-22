@@ -1,0 +1,8 @@
+
+TrackingSensor pin position:
+	"S"  =====> 11
+	"-"  =====> GND
+	"+"  =====> +5V
+Led pin position:
+	"S" ======> 16
+	"-" ======> GND

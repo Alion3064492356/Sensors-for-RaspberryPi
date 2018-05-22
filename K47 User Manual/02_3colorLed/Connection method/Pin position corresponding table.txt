@@ -1,0 +1,6 @@
+3color Led pin position:
+	
+	pin_R ====> 10
+	pin_G ====> 12 
+	pin_B ====> 11
+	"-" =====> GND

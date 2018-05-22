@@ -1,0 +1,4 @@
+DHT11 pin position:
+	"DATA" ====> 7
+	"VCC" =====> +5v
+	"GND" =====> GND

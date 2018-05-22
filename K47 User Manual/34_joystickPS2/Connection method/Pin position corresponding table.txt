@@ -1,0 +1,15 @@
+AD0382 Pin position:
+	ADC_CS  =====  11
+	ADC_CLK =====  12
+	ADC_DIO =====  13
+	CH0 ===== VRx(pin of joystick)
+	CH1 ===== VRy(pin of joystick)
+	VCC ===== +5v
+	GND ===== GND
+
+joystick pin position:
+	"sw" === 15
+	"VRx" === CH0(pin of ADC0382)
+	"VRy" === CH1(pin of ADC0382)
+	GND   === GND
+	"+5V" === +5V

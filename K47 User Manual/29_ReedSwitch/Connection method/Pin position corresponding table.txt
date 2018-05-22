@@ -1,0 +1,17 @@
+
+AD0382 Pin position:
+	ADC_CS  =====  11
+	ADC_CLK =====  12
+	ADC_DIO =====  13
+	CH0 ===== analog in
+	VCC ===== +5v
+	GND ===== GND
+
+ReedSwitch pin position:
+	Reed_DO_PIN === 15
+	Reed_AO_PIN === CH0(pin of ADC0382)
+	"+" === +5V
+	GND ==== GND
+Led pin position:
+	LedPin ==== 16
+	GND=====GND

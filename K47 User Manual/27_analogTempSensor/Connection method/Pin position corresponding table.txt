@@ -1,0 +1,14 @@
+
+ADC0832 pin position:
+	ADC_CS  ======>  11
+	ADC_CLK ======>  12
+	ADC_DIO ======>  13
+	GND ====> GND
+	VCC ====> +5V
+analogTempSensor pin position:
+	"S" =====> CH0(pin of ADC0832)
+	"+" =====> +5V
+	"-" =====> GND
+Led pin position:
+	"S" =====> 16
+	"-" =====> GND
