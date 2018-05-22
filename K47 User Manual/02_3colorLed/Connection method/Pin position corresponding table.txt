@@ -1,6 +1,6 @@
-3color Led pin position:
+Three-Color LED pin position:
 	
-	pin_R ====> 10
-	pin_G ====> 12 
-	pin_B ====> 11
-	"-" =====> GND
+	"R" ====> Raspberry Pi 10
+	"G" ====> Raspberry Pi 12 
+	"B" ====> Raspberry Pi 11
+	"-" =====> Raspberry Pi GND
