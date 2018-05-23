@@ -1,4 +1,3 @@
-
-7Color led pin position:
+Seven-Color LED pin position:
 	"S" ==== > 10
 	"-" ====> GND
