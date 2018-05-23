@@ -1,9 +1,8 @@
-
 Button Switch pin position:
-	"S"  =====> 11
-	"-"  =====> GND
-	"+"  =====> +5V
+	"S"  =====> Raspberry Pi pin 11
+	"-"  =====> Raspberry Pi GND
+	"+"  =====> Raspberry Pi +5V
 	
-Led pin position:
-	"S" ======> 16
-	"-" ======> GND
+LED pin position:
+	"S" ======> Raspberry Pi pin 16
+	"-" ======> Raspberry Pi GND
