@@ -1,4 +1,0 @@
-Double color led pin position:
-	"S" =====> 10
-	pin_G =====> 11
-	"-"  ====> GND
