@@ -1,7 +1,4 @@
 Two-Color LED pin position:
-	"S" =====> Raspberry Pi Pin 10
-	"G" =====> Raspberry Pi Pin 11
-	"-"  ====> Raspberry Pi GND
-	
-<<CONFUSION HERE --- NEEDS FIX. See:
-https://github.com/Alion3064492356/Sensors-for-RaspberryPi/issues/7>>
+	"S" =====> Raspberry Pi Pin 11
+	" " =====> Raspberry Pi Pin 10 
+	"-" =====> Raspberry Pi GND
