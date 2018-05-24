@@ -67,7 +67,7 @@ Some of the modules in your kit explore different variations of a common idea. T
 
 Here are some groups of related modules:
 
-* LEDs: includes 2Color, 3Color, 7Color and RGB LEDs
+* LEDs (includes 2Color, 3Color, 7Color and RGB LEDs)
 
 These are all various configurations of light-emitting diodes, allowing different light combinations, intensities, and behavior effects. LEDs are one of the most popular forms of indicator or status output for microcontroller programs.
 
@@ -75,11 +75,14 @@ These are all various configurations of light-emitting diodes, allowing differen
 
 <<TBW>>
 
-* Magnetic Sensors: includes AnalogHall, LinearHall and MagneticHall sensors; Reed  and MiniReed switches.
+* Magnetic Sensors: includes AnalogHall, LinearHall and MagneticHall sensors; Reed and MiniReed switches.
 
-<<TBRevised: reed vs. Hall Effect>>
+These sensors detect magnets and changes in the magnetic field. and are useful for determining when two specific objects are close together. (Attach your magnet to one, and your sensor to the other.) The AnalogHall and LinearHall devices both detect the variable analog strength of the magnetic field (strong when the magnet is close; weaker as it moves farther away), the MagneticHall acts more as a (digital) switch which is either ON or OFF. Hall effect sensors are "solid state" devices, whereas reed switches are mechanical: the magnet actually pulls separated two wires into contact when it is close to them.  
 
-These sensors detect magnets and changes in the magnetic field. and are useful for determining when two specific objects are close together. (Attach your magnet to one, and your sensor to the other.) The AnalogHall and LinearHall devices both detect the variable analog strength of the magnetic field (strong when the magnet is close; weaker as it moves farther away), the MagneticHall acts more as a (digital) switch which is either ON or OFF. 
+* Buzzers (includes active and passive buzzers)
+
+No electronics project is complete without electronic bells and whistles!
+
 
 7. Support
 

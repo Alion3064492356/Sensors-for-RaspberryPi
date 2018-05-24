@@ -1,8 +1,0 @@
-
-activeBuzzer pin position:
-	"S" =====> 11
-	"-" =====> GND
-	
-passiveBuzzer pin position:
-	"S" =====> 11
-	"-" =====> GND

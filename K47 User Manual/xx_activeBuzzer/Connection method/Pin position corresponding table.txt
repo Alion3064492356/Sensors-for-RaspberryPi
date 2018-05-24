@@ -1,0 +1,3 @@
+Active Buzzer pin position:
+	"S" =====> Raspberry Pi pin 11
+	"-" =====> Raspberry Pi GND	
