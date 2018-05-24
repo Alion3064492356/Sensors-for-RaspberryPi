@@ -1,17 +1,19 @@
 
-AD0382 Pin position:
-	ADC_CS  =====  11
-	ADC_CLK =====  12
-	ADC_DIO =====  13
-	CH0 ===== analog in
-	VCC ===== +5v
-	GND ===== GND
+ADC0382 Pin position:
+	CS  =====  Raspberry Pi Pin 11
+	CLK =====  Raspberry Pi Pin 12
+	DO =====  Raspberry Pi Pin 13
+	DI =====  Raspberry Pi Pin 13 
+	CH0 ===== Reed Switch Pin A0
+	VCC ===== Raspberry Pi +5V
+	GND ===== Raspberry Pi GND
 
-ReedSwitch pin position:
-	Reed_DO_PIN === 15
-	Reed_AO_PIN === CH0(pin of ADC0382)
-	"+" === +5V
-	GND ==== GND
-Led pin position:
-	LedPin ==== 16
-	GND=====GND
+Reed Switch pin position:
+	D0  ====  Raspberry Pi 15
+	A0  ====  ADC0382 Pin CH0
+	"+" ====  Raspberry Pi +5V
+	GND ====  Raspberry Pi GND
+	
+LED pin position:
+	"S" ==== Raspberry Pi 16
+	GND ==== Raspberry Pi GND
