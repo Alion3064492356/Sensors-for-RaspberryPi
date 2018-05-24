@@ -1,8 +1,0 @@
-Hall magnatic pin position:
-	"S" === 11
-	"+" ==== +5V
-	"-" ==== GND
-	
-Led pin position:
-	LedPin==== 16
-	"-" ==== GND
