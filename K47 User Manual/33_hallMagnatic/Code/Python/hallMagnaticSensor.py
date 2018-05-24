@@ -1,23 +1,21 @@
 #!/usr/bin/env python
-import ADC0832
 import time
 import RPi.GPIO as GPIO
 
 LedPin = 16
-thresholdVal = 150
+SensorPin = 11
 
 def init():
-	ADC0832.setup()
+        GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(LedPin, GPIO.OUT)
+	GPIO.setup(SensorPin, GPIO.IN)
 
 def loop():
 	while True:
-		analogVal = ADC0832.getResult(0)
-		print 'analog value is %d' % analogVal
-		if(analogVal > thresholdVal):
-			GPIO.output(LedPin, GPIO.HIGH)
-		else:
+		if(GPIO.input(SensorPin)):
 			GPIO.output(LedPin, GPIO.LOW)
+		else:
+			GPIO.output(LedPin, GPIO.HIGH)
 		time.sleep(0.2)	
 		
 if __name__ == '__main__':
@@ -25,5 +23,4 @@ if __name__ == '__main__':
 	try:
 		loop()
 	except KeyboardInterrupt: 
-		ADC0832.destroy()
 		print 'The end !'
