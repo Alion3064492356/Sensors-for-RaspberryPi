@@ -15,16 +15,16 @@ def setup():
 	GPIO.setup(IrEmissionPin, GPIO.OUT)   # Set IrPin's mode is output
 	GPIO.output(LedPin, GPIO.LOW) # Set LedPin low to off led
 
-def swLed(ev=None):
+def irReceivedCallback(ev=None): # Called every time the irReceiver pin falls. Blink the LED!
 	global Led_status
 	Led_status = not Led_status
 	GPIO.output(LedPin, Led_status)  # switch led status(on-->off; off-->on)
-	print("receive signal!\n")
+	print("received signal!\n")
 	time.sleep(0.1)
 	GPIO.output(LedPin, False)
 
 def loop():
-	GPIO.add_event_detect(IrReceiverPin, GPIO.FALLING, callback=swLed) # wait for falling
+	GPIO.add_event_detect(IrReceiverPin, GPIO.FALLING, callback=irReceivedCallback) # wait for falling
 	while True:
 		print '...IrPin high'
 		GPIO.output(IrEmissionPin, GPIO.HIGH)  # IrPin on
