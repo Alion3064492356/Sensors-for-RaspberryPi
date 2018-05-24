@@ -1,0 +1,8 @@
+Magnetic Hall Sensor pin position:
+	"S" ==== Raspberry Pi pin 11
+	"+" ==== Raspberry Pi +5V
+	"-" ==== Raspberry Pi GND
+	
+LED pin position:
+	"S" ==== Raspberry Pi pin 16
+	"-" ==== Raspberry Pi pin GND
