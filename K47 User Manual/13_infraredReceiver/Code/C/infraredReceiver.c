@@ -1,7 +1,8 @@
 #include <wiringPi.h>
 #include <stdio.h>
 
-#define    IrPin    0
+#define    IrEmissionPin    0
+#define	   IrReceiverPin	16
 #define	   LedPin	4
 
 int cnt = 0;
@@ -29,13 +30,25 @@ int main(void)
 		return -1; 
 	}
 	pinMode(LedPin, OUTPUT);
+	pinMode(IrEmissionPin, OUTPUT);
+	pinMode(IrReceiverPin, INPUT);
+	pullUpDnControl(IrReceiverPin, PUD_UP) 
 	
-	if(wiringPiISR(IrPin, INT_EDGE_FALLING, &myISR) == -1)
+	if(wiringPiISR(IrReceiverPin, INT_EDGE_FALLING, &myISR) == -1)
 	{
 		printf("setup ISR failed !");
 		return -1;
 	}
-	while(1);
+	while(1)
+	{
+		digitalWrite(IrEmissionPin, HIGH);
+		printf("IrEmissionPin is set High\n");
+		delay(500);
+		
+		digitalWrite(IrEmissionPin, LOW);
+		printf("IrEmissionPin is set Low\n");
+		delay(500);
+	}
 	
 	return 0;
 }

@@ -1,7 +1,0 @@
-IR receive pin position:
-	"S" ====> 11
-	"+" ====> +5V
-	"-" ====> GND
-Led pin position:
-	"S" ====> 16
-	"-" ===> GND
