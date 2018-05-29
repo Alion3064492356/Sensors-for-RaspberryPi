@@ -1,15 +1,13 @@
-
-4bit_digital_tube pin position====>
-	'pinA'====>3 
-	'pinB'====>5 
-	'pinC'====>21 
-	'pinD'====>8 
-	'pinE'====>10
-	'pinF'====>11 
-	'pinG'====>12 
-	'pinDP'====>13 
-	'pin_1'====>15
-	'pin_2'====>16 
-	'pin_3'====>18 
-	'pin_4'====>19
-	GND   =====> GND
+4bit_digital_tube pin position:
+	'A' ====> Raspberry Pi pin 3 
+	'B' ====> Raspberry Pi pin 5 
+	'C' ====> Raspberry Pi pin 21 
+	'D' ====> Raspberry Pi pin 8 
+	'E' ====> Raspberry Pi pin 10
+	'F' ====> Raspberry Pi pin 11 
+	'G' ====> Raspberry Pi pin 12 
+	'DP'====> Raspberry Pi pin 13 
+	'1' ====> Raspberry Pi pin 15
+	'2' ====> Raspberry Pi pin 16 
+	'3' ====> Raspberry Pi pin 18 
+	'4' ====> Raspberry Pi pin 19
