@@ -1,0 +1,6 @@
+Rotary-Encoder pin position:
+	"DT" ====> Raspberry Pi pin 11  
+	"CLK"====> Raspberry Pi pin 12   
+	"SW" ====> Raspberry Pi pin 13 
+	GND  ====> Raspberry Pi GND
+	"+"  ====> Raspberry Pi +5V

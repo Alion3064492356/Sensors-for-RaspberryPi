@@ -1,7 +1,0 @@
-
-rotaryEncoder pin position:
-	"DT" ===> 11  
-	"CLK" ===> 12   
-	"SW" ===> 13 
-	GND ====> GND
-	"+" ====> +5V
