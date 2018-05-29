@@ -1,12 +1,12 @@
 4bit_digital_tube pin position:
-	'A' ====> Raspberry Pi pin 3 
-	'B' ====> Raspberry Pi pin 5 
-	'C' ====> Raspberry Pi pin 21 
-	'D' ====> Raspberry Pi pin 8 
-	'E' ====> Raspberry Pi pin 10
-	'F' ====> Raspberry Pi pin 11 
-	'G' ====> Raspberry Pi pin 12 
-	'DP'====> Raspberry Pi pin 13 
+	'A' ====> Raspberry Pi pin 3 (through resistor)
+	'B' ====> Raspberry Pi pin 5 (through resistor)
+	'C' ====> Raspberry Pi pin 21 (through resistor)
+	'D' ====> Raspberry Pi pin 8 (through resistor)
+	'E' ====> Raspberry Pi pin 10 (through resistor)
+	'F' ====> Raspberry Pi pin 11 (through resistor)
+	'G' ====> Raspberry Pi pin 12 (through resistor)
+	'DP'====> Raspberry Pi pin 13 (through resistor)
 	'1' ====> Raspberry Pi pin 15
 	'2' ====> Raspberry Pi pin 16 
 	'3' ====> Raspberry Pi pin 18 
