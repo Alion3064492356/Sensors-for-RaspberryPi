@@ -1,0 +1,4 @@
+Two-Color LED pin position:
+	"S" =====> Raspberry Pi Pin 11
+	" " =====> Raspberry Pi Pin 10 
+	"-" =====> Raspberry Pi GND
