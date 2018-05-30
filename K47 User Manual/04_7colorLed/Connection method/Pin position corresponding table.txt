@@ -1,3 +1,3 @@
-Seven-Color LED pin position:
-	"S" ==== > 10
-	"-" ====> GND
+Seven-color LED pin position:
+	S		Raspberry Pi pin 10(through resistor)
+	“-“		Raspberry Pi GND

@@ -4,5 +4,5 @@ Knock Switch pin position:
 	"-" ====> Raspberry Pi GND
 	
 LED pin position:
-	"S" ====> Raspberry Pi pin 16
+	"S" ====> Raspberry Pi pin 16(through resistor)
 	"-" ===> Raspberry Pi GND
