@@ -1,6 +1,6 @@
 Three-Color LED pin position:
 	
-	"R" ====> Raspberry Pi 10(through resistor)
-	"G" ====> Raspberry Pi 12(through resistor) 
-	"B" ====> Raspberry Pi 11(through resistor)
+	"R" ====> Raspberry Pi 10 (through resistor)
+	"G" ====> Raspberry Pi 12 (through resistor) 
+	"B" ====> Raspberry Pi 11 (through resistor)
 	"-" =====> Raspberry Pi GND

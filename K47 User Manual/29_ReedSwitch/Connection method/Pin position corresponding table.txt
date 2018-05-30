@@ -15,5 +15,5 @@ Reed Switch pin position:
 	GND ====  Raspberry Pi GND
 	
 LED pin position:
-	"S" ==== Raspberry Pi 16(through resistor)
+	"S" ==== Raspberry Pi 16 (through resistor)
 	GND ==== Raspberry Pi GND

@@ -12,5 +12,5 @@ smokeSensor pin position:
 	VCC ==== +5V
 	GND ==== GND
 led pin position:
-	LedPin === 16
+	LedPin === 16 (resistor)
 	"-" === GND

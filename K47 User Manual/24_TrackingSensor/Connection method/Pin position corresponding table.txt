@@ -4,5 +4,5 @@ TrackingSensor pin position:
 	"-"  =====> GND
 	"+"  =====> +5V
 Led pin position:
-	"S" ======> 16
+	"S" ======> 16 (resistor)
 	"-" ======> GND
