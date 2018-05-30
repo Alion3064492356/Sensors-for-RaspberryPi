@@ -88,7 +88,7 @@ int main (void)
 	}  
     else  
     {  
-       printf("Sorry! Sensor dosent ans!\n");  
+       printf("Sorry! Sensor does not respond!\n");  
        databuf = 0;  
     }  
   }  
