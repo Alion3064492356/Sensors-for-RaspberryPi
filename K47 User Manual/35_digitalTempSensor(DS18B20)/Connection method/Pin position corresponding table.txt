@@ -1,6 +1,5 @@
 DS18B20 pin position:
-	"S" =====> 7
-	"+" =====> +5V
-	"-" =====> GND
+	"S" =====> Raspberry Pi pin 7
+	"+" =====> Raspberry Pi +5V
+	"-" =====> Raspberry Pi GND
 	
-	Tips:Ds18b20's data pin must be connect GPIO7
