@@ -59,8 +59,6 @@ uchar get_ADC_Result(void)
 
 int main(void)
 {
-	uchar digitalVal = 1;
-	uchar analogVal = 0;
 	if(wiringPiSetup() == -1)
 	{
 		printf("setup wiringPi failed !");
@@ -75,18 +73,15 @@ int main(void)
 
 	while(1)
 	{
-		if((digitalVal = digitalRead(TempSensor_DO_Pin)))
+		printf("Current analog value is %d.\n", get_ADC_Result());
+			
+		if(HIGH == digitalRead(TempSensor_DO_Pin)
 		{
-			printf("Do is %d.\n", digitalVal);
-			printf("Temprature alarm...");
-			printf("Current analog value is %d.\n", get_ADC_Result());
-			delay(200);
-		}
-		else
-		{
-			;
-		}
+			printf("Temperature alarm! Threshold exceeded!\n");
+		} 
+		// else LOW; temperature threshold not exceeded
 
+		delay(200);
 	}
 
 	return 0;

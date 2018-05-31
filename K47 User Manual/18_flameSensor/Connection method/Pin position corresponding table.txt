@@ -13,5 +13,5 @@ FlameSensor pin position:
 	"+" === +5V
 	GND ==== GND
 Led pin position:
-	LedPin ==== 16
+	LedPin ==== 16 (resistor)
 	"-"=====GND

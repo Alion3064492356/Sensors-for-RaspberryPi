@@ -4,5 +4,5 @@ Laser pin position:
 	"-" ====> Raspberry Pi GND
 	
 LED pin position:
-	"S" ====> Raspberry Pi 16(through resistor)
+	"S" ====> Raspberry Pi 16 (through resistor)
 	"-" ===> Raspberry Pi GND

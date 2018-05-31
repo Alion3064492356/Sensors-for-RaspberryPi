@@ -1,0 +1,14 @@
+AD0382 Pin position:
+	CS  =====  Raspberry Pi pin 11
+	CLK =====  Raspberry Pi pin 12
+	DO  =====  Raspberry Pi pin 13
+	DI  =====  Raspberry Pi pin 13 
+	CH0 =====  Hybrid Temperature Sensor pin "S"
+	VCC =====  Raspberry Pi +5V
+	GND =====  Raspberry Pi GND
+
+Hybrid Temperature Sensor pin position:
+	D0  ==== Raspberry Pi pin 15
+	A0  ==== ADC0382 pin CH0
+	"+" ==== Raspberry Pi +5V
+	GND ==== Raspberry Pi GND

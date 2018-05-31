@@ -1,0 +1,4 @@
+Temperature & Humidity Sensor (DHT11) pin position:
+	DATA =====> Raspberry Pi pin 7
+	VCC  =====> Raspberry Pi +5V
+	GND  =====> Raspberry Pi GND
