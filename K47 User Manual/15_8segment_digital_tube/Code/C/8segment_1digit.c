@@ -4,7 +4,7 @@
 //Set pin control all digital IO
 int pinA = 8;
 int pinB = 9;
-int pinC = 3;
+int pinC = 4;
 int pinD = 15;
 int pinE = 16;
 int pinF = 0;
