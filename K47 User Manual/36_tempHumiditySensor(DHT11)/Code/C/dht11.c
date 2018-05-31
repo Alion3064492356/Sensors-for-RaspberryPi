@@ -62,8 +62,6 @@ uint8 readSensorData(void)
 int main (void)  
 {  
   
-  printf("Use GPIO1 to read data!\n");  
-  
   if (-1 == wiringPiSetup()) 
   {  
     printf("Setup wiringPi failed!");  
@@ -73,7 +71,6 @@ int main (void)
   pinMode(pinNumber, OUTPUT); // set mode to output  
   digitalWrite(pinNumber, 1); // output a high level   
   
-  printf("Enter OS-------\n");  
   while(1) 
   {
 	  pinMode(pinNumber,OUTPUT); // set mode to output
