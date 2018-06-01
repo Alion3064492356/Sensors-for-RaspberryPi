@@ -1,8 +1,8 @@
+Tracking Sensor pin position:
+	"S"  =====> Raspberry Pi pin 11
+	"-"  =====> Raspberry Pi GND
+	"+"  =====> Raspberry Pi+5V
 
-TrackingSensor pin position:
-	"S"  =====> 11
-	"-"  =====> GND
-	"+"  =====> +5V
-Led pin position:
-	"S" ======> 16 (resistor)
-	"-" ======> GND
+LED pin position:
+	"S" ======> Raspberry Pi pin 16 (through resistor)
+	"-" ======> Raspberry Pi GND
