@@ -1,7 +1,8 @@
-TouchSensor pin position:
-	"SIG" =====> 11
-	"VCC" =====> +5v
-	"GND" =====> GND
-Led pin position:
-	"S" ======>16 (resistor)
-	"-" ======> GND
+Touch Sensor pin position:
+	SIG =====> Raspberry Pi pin 11
+	VCC =====> Raspberry Pi +5V
+	GND =====> Raspberry Pi GND
+
+LED pin position:
+	"S" ======> Raspberry Pi pin 16 (through resistor)
+	"-" ======> Raspberry Pi GND
