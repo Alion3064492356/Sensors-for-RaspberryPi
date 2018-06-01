@@ -12,16 +12,13 @@ def setup():
 	GPIO.setup(TiltPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	GPIO.output(LedPin, GPIO.LOW) # Set LedPin low to off led
 
-def swLed(ev=None):
-	global Led_status
-	Led_status = not Led_status
-	GPIO.output(LedPin, Led_status)  # switch led status(on-->off; off-->on)
-	print "LED: off" if Led_status else "LED: on"
 
 def loop():
-	GPIO.add_event_detect(TiltPin, GPIO.FALLING, callback=swLed, bouncetime=100) # wait for falling
 	while True:
-		pass   # Don't do anything
+		if GPIO.input(TiltPin) == False:
+			GPIO.output(LedPin, GPIO.HIGH)
+		else:
+			GPIO.output(LedPin, GPIO.LOW)
 
 def destroy():
 	GPIO.output(LedPin, GPIO.LOW)     # led off

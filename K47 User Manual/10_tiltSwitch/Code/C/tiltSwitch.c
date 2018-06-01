@@ -22,11 +22,11 @@ int main(void)
 	{
 		if(0 == digitalRead(TiltPin))
 		{
-			digitalWrite(LedPin, LOW);	
+			digitalWrite(LedPin, HIGH);	
 		}	
 		else
 		{
-			digitalWrite(LedPin, HIGH);	
+			digitalWrite(LedPin, LOW);	
 		}
 	}
 
