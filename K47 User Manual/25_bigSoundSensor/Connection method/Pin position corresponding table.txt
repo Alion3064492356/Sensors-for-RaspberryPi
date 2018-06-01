@@ -1,12 +1,14 @@
+ADC0382 pin position:
+	CS  =====  Raspberry Pi pin 11
+	CLK =====  Raspberry Pi pin 12
+	DO  =====  Raspberry Pi pin 13
+	DI  =====  Raspberry Pi pin 13 
+	CH0 =====  Big Sound Sensor pin A0
+	VCC =====  Raspberry Pi +5V
+	GND =====  Raspberry Pi GND
 
-AD0382 Pin position:
-	ADC_CS  =====  11
-	ADC_CLK =====  12
-	ADC_DIO =====  13
-	CH0 ===== analog in
-	VCC ===== +5v
-	GND ===== GND
-
-microphone pin position:
-	MIC_DO_PIN === 15
-	MIC_AO_PIN === CH0(pin of ADC0382)
+Big Sound Sensor pin position:
+	D0  ====  Raspberry Pi pin 15
+	A0  ====  ADC0382 pin CH0
+	"+" ====  Raspberry Pi +5V
+	GND ====  Raspberry Pi GND

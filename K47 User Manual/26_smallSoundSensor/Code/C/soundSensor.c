@@ -72,20 +72,19 @@ int main(void)
 	pinMode(ADC_CLK, OUTPUT);
 	pinMode(Sound_DO_PIN, INPUT);
 	pullUpDnControl(Sound_DO_PIN, PUD_UP);
-	printf("Please speaking...\n");
+	printf("Please speak into the sensor...\n");
 
 	while(1)
 	{
+		printf("Current analog value is %d.\n", get_ADC_Result());
+		
 		if(!(digitalVal = digitalRead(Sound_DO_PIN)))
 		{
-			printf("Do is %d.\n", digitalVal);
+			printf("D0 is %d.\n", digitalVal);
 			printf("Voice in...");
-			printf("Current analog value is %d.\n", get_ADC_Result());
 		}
-		else
-		{
-			;
-		}
+		
+		delay(200);
 
 	}
 

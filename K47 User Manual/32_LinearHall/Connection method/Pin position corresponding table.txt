@@ -1,19 +1,19 @@
 
 AD0382 Pin position:
-	CS  ===== Raspberry Pi Pin 11
-	CLK ===== Raspberry Pi Pin 12
-	DI  ===== Raspberry Pi Pin 13
-	DO  ===== Raspberry Pi Pin 13
-	CH0 ===== Linear Hall Sensor Pin A0
+	CS  ===== Raspberry Pi pin 11
+	CLK ===== Raspberry Pi pin 12
+	DI  ===== Raspberry Pi pin 13
+	DO  ===== Raspberry Pi pin 13
+	CH0 ===== Linear Hall Sensor pin A0
 	VCC ===== Raspberry Pi +5V
 	GND ===== Raspberry Pi GND
 
 Linear Hall pin position:
-	D0  ====  Raspberry Pi 15
+	D0  ====  Raspberry Pi pin 15
 	A0  ====  ADC0382 Pin CH0
 	"+" ====  Raspberry Pi +5V
 	GND ====  Raspberry Pi GND
 	
 LED pin position:
-	"S" ==== Raspberry Pi Pin 16 (through resistor)
+	"S" ==== Raspberry Pi pin 16 (through resistor)
 	"-" ==== Raspberry Pi GND

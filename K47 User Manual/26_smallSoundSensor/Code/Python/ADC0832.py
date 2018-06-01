@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 #	This is a program for all ADC Module. It 
-#	convert analog singnal to digital signal.
+#	convert analog signal to digital signal.
 #   This program is most analog signal modules' 
 #	dependency. Use it like this:
 #	`import ADC0832`

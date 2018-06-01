@@ -9,7 +9,7 @@
 #define     ADC_CLK   1
 #define     ADC_DIO   2
 
-#define  MIC_DO_Pin   3
+#define  Sound_DO_Pin   3
 
 typedef unsigned char uchar;
 typedef unsigned int uint;
@@ -61,29 +61,30 @@ int main(void)
 {
 	uchar digitalVal = 1;
 	uchar analogVal = 0;
-	if(wiringPiSetup() == -1){ //when initialize wiring failed,print messageto screen
-		printf("setup wiringPi failed !");
-		return 1; 
+	if(wiringPiSetup() == -1)
+	{
+		printf("setup wiringPi failed!\n");
+		return -1; 
 	}
     
 
 	pinMode(ADC_CS,  OUTPUT);
 	pinMode(ADC_CLK, OUTPUT);
-	pinMode(MIC_DO_Pin, INPUT);
-	pullUpDnControl(MIC_DO_Pin, PUD_UP);
-	printf("Please speaking...\n");
+	pinMode(Sound_DO_PIN, INPUT);
+	pullUpDnControl(Sound_DO_PIN, PUD_UP);
+	printf("Please speak into the sensor...\n");
 
-	while(1){
-		if(!(digitalVal = digitalRead(MIC_DO_Pin)))
+	while(1)
+	{
+		printf("Current analog value is %d.\n", get_ADC_Result());
+		
+		if(!(digitalVal = digitalRead(Sound_DO_PIN)))
 		{
-			printf("Do is %d.\n", digitalVal);
+			printf("D0 is %d.\n", digitalVal);
 			printf("Voice in...");
-			printf("Current analog value is %d.\n", get_ADC_Result());
 		}
-		else
-		{
-			;
-		}
+		
+		delay(200);
 
 	}
 

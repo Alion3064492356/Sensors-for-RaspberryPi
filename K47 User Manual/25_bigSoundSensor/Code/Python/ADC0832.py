@@ -1,23 +1,20 @@
 #!/usr/bin/env python
 #
-#		This is a program for all ADC Module. It 
-#	convert analog singnal to digital signal.
-#
-#		This program is most analog signal modules' 
+#	This is a program for all ADC Module. It 
+#	convert analog signal to digital signal.
+#   This program is most analog signal modules' 
 #	dependency. Use it like this:
-#		`import ADC0832`
-#		`sig = ADC0832.getResult(chn)`
-#
+#	`import ADC0832`
+#	`sig = ADC0832.getResult(chn)`
 #	*'chn' should be 0 or 1 represent for ch0 or ch1
 #	on ADC0832
 #		
-#		  ACD0832				  Pi
-#			CS ---------------- Pin 11
-#			CLK --------------- Pin 12
-#			DI ---------------- Pin 13
-
-#			VCC ----------------- 5V
-#			GND ------------------ GND
+#   ACD0832------------	Pi
+#	CS ---------------- Pin 11
+#   CLK --------------- Pin 12
+#	DI ---------------- Pin 13
+#   VCC ----------------- 5V
+#	GND ------------------ GND
 #
 
 import RPi.GPIO as GPIO
