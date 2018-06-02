@@ -72,26 +72,14 @@ int main(void)
 	pinMode(ADC_CS,  OUTPUT);
 	pinMode(ADC_CLK, OUTPUT);
 	pinMode(Flame_DO_Pin, INPUT);
-	pullUpDnControl(Flame_DO_Pin, PUD_UP);
+	pullUpDnControl(Flame_DO_Pin, PUD_DOWN);
 	pinMode(LedPin, OUTPUT);
 
 	while(1)
 	{
-		if((digitalVal = digitalRead(Flame_DO_Pin)))
-		{
-			printf("Do is %d.\n", digitalVal);
-			analogVal = get_ADC_Result();
-			printf("Current analog value is %d.\n", analogVal);
-			if(analogVal < thresholdVal)
-			{
-				digitalWrite(LedPin, HIGH);
-			}
-			delay(200);
-		}
-		else
-		{
-			digitalWrite(LedPin, LOW);
-		}
+		printf("Current analog value is %d.\n", get_ADC_Result());
+		digitalWrite(LedPin, digitalRead(Flame_DO_Pin));
+		delay(200);
 	}
 
 	return 0;

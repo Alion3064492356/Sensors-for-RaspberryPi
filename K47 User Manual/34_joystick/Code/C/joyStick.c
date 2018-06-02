@@ -10,6 +10,13 @@ typedef unsigned int uint;
 #define     ADC_DIO   2
 #define  JoyStick_Z   3
 
+#define UP			1
+#define DOWN		2
+#define LEFT   	 	1
+#define RIGHT		2
+
+
+
 uchar get_ADC_Result(uchar xyVal)
 {
 	uchar i;
@@ -62,7 +69,7 @@ uchar get_ADC_Result(uchar xyVal)
 
 int main(void)
 {
-	uchar tmp;
+	uchar xFlag, yFlag;
 	uchar xVal = 0, yVal = 0, zVal = 0;
 
 	if(wiringPiSetup() == -1)
@@ -79,26 +86,26 @@ int main(void)
 
 	while(1)
 	{
-		pinMode(ADC_DIO, OUTPUT);
-		tmp = 0;
+		xFlag = 0;
+		yFlag = 0;
 		xVal = get_ADC_Result('x');
 		if(xVal == 0)
 		{
-			tmp = 1; //up	
+			xFlag = UP; //up	
 		}
 		if(xVal == 255)
 		{
-			tmp = 2; //down
+			xFlag = DOWN; //down
 		}
 
 		yVal = get_ADC_Result('y');
 		if(yVal == 0)
 		{
-			tmp = 3; //left
+			yFlag = LEFT; //left
 		}
 		if(yVal == 255)
 		{
-			tmp = 4; //right
+			yFlag = RIGHT; //right
 		}
 
 		zVal = digitalRead(JoyStick_Z);
@@ -106,21 +113,26 @@ int main(void)
 		{
 			printf("Button is pressed !\n");
 		}
-
-		//printf("x : %d   y : %d   z : %d\n", xVal, yVal, zVal);
-		switch(tmp)
+		
+		switch(xFlag)
 		{
-			case 1: 
+			case UP: 
 				printf("up\n"); 
 				break;
-			case 2: 
+			case DOWN: 
 				printf("down\n"); 
 				break;
-			case 3: 
-				printf("right\n"); 
+			default:
 				break;
-			case 4: 
+		}
+		
+		switch(yFlag)
+		{
+			case LEFT: 
 				printf("left\n"); 
+				break;
+			case RIGHT: 
+				printf("right\n"); 
 				break;
 			default:
 				break;
