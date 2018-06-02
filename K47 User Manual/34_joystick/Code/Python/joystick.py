@@ -47,7 +47,7 @@ def loop():
 		elif yFlag == 2:
 			print 'right'
 
-def destory():
+def destroy():
 	GPIO.cleanup()										# Release resource
 
 if __name__ == '__main__':								# Program start from here
@@ -55,4 +55,4 @@ if __name__ == '__main__':								# Program start from here
 	try:
 		loop()
 	except KeyboardInterrupt:  	
-		destory()
+		destroy()

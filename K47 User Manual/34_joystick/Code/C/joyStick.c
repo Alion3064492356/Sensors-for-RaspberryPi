@@ -8,7 +8,7 @@ typedef unsigned int uint;
 #define     ADC_CS    0
 #define     ADC_CLK   1
 #define     ADC_DIO   2
-#define  JoyStick_Z   3
+#define  JoyStick_Button  3
 
 #define UP			1
 #define DOWN		2
@@ -70,7 +70,7 @@ uchar get_ADC_Result(uchar xyVal)
 int main(void)
 {
 	uchar xFlag, yFlag;
-	uchar xVal = 0, yVal = 0, zVal = 0;
+	uchar xVal = 0, yVal = 0, bVal = 0;
 
 	if(wiringPiSetup() == -1)
 	{
@@ -80,9 +80,9 @@ int main(void)
 
 	pinMode(ADC_CS,  OUTPUT);
 	pinMode(ADC_CLK, OUTPUT);
-	pinMode(JoyStick_Z, INPUT);
+	pinMode(JoyStick_Button, INPUT);
 
-	pullUpDnControl(JoyStick_Z, PUD_UP);
+	pullUpDnControl(JoyStick_Button, PUD_UP);
 
 	while(1)
 	{
@@ -108,8 +108,8 @@ int main(void)
 			yFlag = RIGHT; //right
 		}
 
-		zVal = digitalRead(JoyStick_Z);
-		if(zVal == 0)
+		bVal = digitalRead(JoyStick_Button);
+		if(bVal == 0)
 		{
 			printf("Button is pressed !\n");
 		}
