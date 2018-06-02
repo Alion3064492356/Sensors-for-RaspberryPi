@@ -1,15 +1,16 @@
-AD0382 Pin position:
-	ADC_CS  =====  11
-	ADC_CLK =====  12
-	ADC_DIO =====  13
-	CH0 ===== VRx(pin of joystick)
-	CH1 ===== VRy(pin of joystick)
-	VCC ===== +5v
-	GND ===== GND
-
-joystick pin position:
-	"sw" === 15
-	"VRx" === CH0(pin of ADC0382)
-	"VRy" === CH1(pin of ADC0382)
-	GND   === GND
-	"+5V" === +5V
+ADC0382 pin position:
+	CS  ===== Raspberry Pi pin 11
+	CLK ===== Raspberry Pi pin 12
+	DI  ===== Raspberry Pi pin 13
+	DO  ===== Raspberry Pi pin 13
+	CH0 ===== Joystick pin VRx
+	CH1 ===== Joystick pin VRy
+	VCC ===== Raspberry Pi +5V
+	GND ===== Raspberry Pi GND
+	
+Joystick pin position:
+	sw  ===== Raspberry Pin pin 15
+	VRx ===== ADC0382 pin CH0
+	VRy ===== ADC0382 pin CH1
+	GND ===== Raspberry Pi GND
+	+5V ===== Raspberry Pi +5V
