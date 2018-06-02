@@ -17,13 +17,8 @@ int main(void)
 
 	while(1)
 	{
-		if(digitalRead(TouchPin) == HIGH)
-		{
-			printf("touched\n");
-			digitalWrite(LedPin, HIGH);     //led on
-			delay(100);
-			digitalWrite(LedPin, LOW);    //led off
-		}	
+		digitalWrite(LedPin, digitalRead(TouchPin));
+		delay(200);
 	}
 
 	return 0;
