@@ -9,24 +9,18 @@ thresholdVal = 150
 
 def init():
 	GPIO.setmode(GPIO.BOARD)	
-	GPIO.setup(Flame_DO_Pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(Flame_DO_Pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 	GPIO.setup(LedPin, GPIO.OUT)
 	ADC0832.setup()
 	
 def loop():	
     while True:
         global digitalVal, analogVal
-        digitalVal = GPIO.input(Flame_DO_Pin)
-        if(digitalVal == 1):
-            print 'DO is %d' % digitalVal
-	    analogVal = ADC0832.getResult(0)
-	    print 'Current analog value is %d'% analogVal 
-	    if(analogVal < thresholdVal):
-		GPIO.output(LedPin, GPIO.HIGH)
-		time.sleep(0.2)
-        else:
-            GPIO.output(LedPin, GPIO.LOW)
-
+	analogVal = ADC0832.getResult(0)
+	print 'Current analog value is %d'% analogVal 
+	GPIO.output(LedPin, GPIO.input(Flame_DO_Pin))
+	time.sleep(0.2)
+		
 if __name__ == '__main__':
 	init()
 	try:
