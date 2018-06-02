@@ -1,5 +1,4 @@
-
-AD0382 Pin position:
+ADC0382 Pin position:
 	CS  ===== Raspberry Pi pin 11
 	CLK ===== Raspberry Pi pin 12
 	DI  ===== Raspberry Pi pin 13
