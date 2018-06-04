@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 #define RelayPin      16
-#define LedPin		  4
 
 int main(void)
 {
@@ -14,8 +13,6 @@ int main(void)
 	}
 	
 	pinMode(RelayPin, OUTPUT);
-	pinMode(LedPin, OUTPUT);
-	digitalWrite(LedPin, HIGH);
 	while(1)
 	{
 			digitalWrite(RelayPin, HIGH);

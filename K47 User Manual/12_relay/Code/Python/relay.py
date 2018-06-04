@@ -2,16 +2,11 @@
 import RPi.GPIO as GPIO
 import time
 
-RelayPin = 10    # pin10
-LedPin = 16
+RelayPin = 10    
 
 def setup():
 	GPIO.setmode(GPIO.BOARD)       # Numbers GPIOs by physical location
 	GPIO.setup(RelayPin, GPIO.OUT)
-	GPIO.setup(LedPin, GPIO.OUT)
-	GPIO.output(LedPin, GPIO.HIGH)
-
-	
 
 def loop():
 	while True:
@@ -23,10 +18,10 @@ def loop():
 		time.sleep(0.5)
 
 def destroy():
-	GPIO.output(RelayPin, GPIO.HIGH)
+	GPIO.output(RelayPin, GPIO.LOW)
 	GPIO.cleanup()                     # Release resource
 
-if __name__ == '__main__':     # Program start from here
+if __name__ == '__main__':     		   # Program start from here
 	setup()
 	try:
 		loop()
