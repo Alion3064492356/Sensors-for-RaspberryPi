@@ -80,12 +80,8 @@ int main(void)
 		{
 			printf("Do is %d.\n", digitalVal);
 			printf("Touch detected...");
-			delay(200);
 		}
-		else
-		{
-			;
-		}
+		delay(200);
 
 	}
 
