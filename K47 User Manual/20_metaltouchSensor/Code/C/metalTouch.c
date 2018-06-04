@@ -70,15 +70,16 @@ int main(void)
 	pinMode(ADC_CS,  OUTPUT);
 	pinMode(ADC_CLK, OUTPUT);
 	pinMode(Touch_DO_Pin, INPUT);
-	//pullUpDnControl(MIC_DO_Pin, PUD_UP);
+	pullUpDnControl(MIC_DO_Pin, PUD_DOWN);
 	printf("Please touch...\n");
 
-	while(1){
+	while(1)
+	{
+		printf("Current analog value is %d.\n", get_ADC_Result());
 		if((digitalVal = digitalRead(Touch_DO_Pin)))
 		{
 			printf("Do is %d.\n", digitalVal);
 			printf("Touch detected...");
-			printf("Current analog value is %d.\n", get_ADC_Result());
 			delay(200);
 		}
 		else
