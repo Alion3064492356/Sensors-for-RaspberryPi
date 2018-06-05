@@ -69,7 +69,6 @@ int main(void)
 	pinMode(ADC_CS,  OUTPUT);
 	pinMode(ADC_CLK, OUTPUT);
 	pinMode(TempSensor_DO_Pin, INPUT);
-	pullUpDnControl(TempSensor_DO_Pin, PUD_UP);
 
 	while(1)
 	{

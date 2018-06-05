@@ -7,7 +7,7 @@ TempSensor_DO_PIN = 15
 
 def init():
 	GPIO.setmode(GPIO.BOARD)	
-	GPIO.setup(TempSensor_DO_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(TempSensor_DO_PIN, GPIO.IN)
 	ADC0832.setup()
 def loop():	
     while True:
