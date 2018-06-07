@@ -39,7 +39,7 @@ To conveniently access the GPIO pins on your Raspberry Pi, most Raspberry Pi pro
 	
 		mkdir lib_wiringPi
 		cd lib_wiringPi
-		git clone git://git.dogon.net/wiringPi
+		git clone git://git.drogon.net/wiringPi
 		cd wiringPi
 		./build
 		
