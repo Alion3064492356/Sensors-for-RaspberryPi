@@ -3,7 +3,7 @@ K47 Modules Sensor Kit for Raspberry Pi
 Kuman Trading Shenzen Company, Ltd.
 Support, FAQ, and more info: http://www.kumantech.com
 
-Last Revision Date: 21 May 2018
+Last Revision Date: 7 June 2018
 
 1. Introduction
 
@@ -13,9 +13,11 @@ This documentation package assumes you own a Raspberry Pi, have installed its OS
 
 2. About This Documentation
 
-This package consists of this Read Me file, which introduces you to Raspberry development using the K47 sensors, and then subfolders for each of the many sensors in your kit. These sensor folders contain a variety of information, including wiring diagrams in JPG and CorelDraw formats, sample code in C and Python, and a written Description (.docx/.pdf) introducing you to the physics of the sensor and how to interface it to your Raspberry Pi.
+This package consists of this Read Me file, which introduces you to Raspberry development using the K47 sensors, and then subfolders describing the many sensors in your kit. These sensor folders contain a variety of information, including wiring diagrams in JPG and CorelDraw formats, sample code in C and Python, and most importantly, a written Description (.docx/.pdf) introducing you to the physics of the sensor and how to interface it to your Raspberry Pi.
 
-3. About Analog Sensing and the ADC0832
+If you are new to working with sensors or interfacing your Raspberry Pi to external hardware components, please see the "Introduction To Sensors" document for help getting started. Even if you are an experienced Raspberry Pi designer, you might briefly consult this document for a quick introduction to all the sensors in this kit.
+
+3. About Analog Sensing with the ADC0832
 
 The GPIO pins on your Raspberry Pi are purely digital -- they are either "on" or "off." By contrast, physical phenomena are often analog, which is to say continuous in nature or varying over some spectrum. In order to use sensors that measure analog phenomena, you will also use the ADC0832 Analog/Digital Converter (ADC) included with this kit to translate the analog responses of the sensor into digital responses usable on the Raspberry Pi. 
 
@@ -61,41 +63,9 @@ Certain source code files can refer to other files and libraries existing elsewh
 	
 	b. To compile any C program that #includes "math.h", add "-lm" to your gcc command line.
 	
-6. About Related Modules
-
-Some of the modules in your kit explore different variations of a common idea. They can be grouped into related families of functionality. You may be interested in exploring the documentation for all members in a family at the same time, to gain insight into different specific options available for one general type of functionality.  
-
-Here are some groups of related modules:
-
-* LEDs (includes 2Color, 3Color, 7Color and RGB LEDs)
-
-These are all various configurations of light-emitting diodes, allowing different light combinations, intensities, and behavior effects. LEDs are one of the most popular forms of indicator or status output for microcontroller programs.
-
-* Orientation and Impact Switches: includes Shock, Knock and Tilt switches
-
-<<TBW>>
-
-* Magnetic Sensors: includes AnalogHall, LinearHall and MagneticHall sensors; Reed and MiniReed switches.
-
-These sensors detect magnets and changes in the magnetic field. and are useful for determining when two specific objects are close together. (Attach your magnet to one, and your sensor to the other.) The AnalogHall and LinearHall devices both detect the variable analog strength of the magnetic field (strong when the magnet is close; weaker as it moves farther away), the MagneticHall acts more as a (digital) switch which is either ON or OFF. Hall effect sensors are "solid state" devices, whereas reed switches are mechanical: the magnet actually pulls separated two wires into contact when it is close to them.  
-
-* Buzzers (includes active and passive buzzers)
-
-No electronics project is complete without electronic bells and whistles!
-
-
-7. Support
+6. Support
 
 We recognize that our sample code and Descriptions may not fit the needs of all users. If you have questions, please don't hesitate to contact Customer Service through our website (http://www.kumantech.com). We are happy to help and wish you the best success with your new tools!
-
-
-
- 
-		
-		
-	
-
- 
 
  
 
