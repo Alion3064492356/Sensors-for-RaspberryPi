@@ -13,15 +13,11 @@ def init():
 	
 def loop():	
     while True:
-        global digitalVal, analogVal
+        global digitalVal
         digitalVal = GPIO.input(Reed_AO_PIN)
-        if(digitalVal == 1):
-            print 'DO is %d' % digitalVal
-	    analogVal = ADC0832.getResult(0)
-	    print 'Current analog value is %d'% analogVal 
-	    if(analogVal < thresholdVal):
-		GPIO.output(LedPin, GPIO.HIGH)
-		time.sleep(0.2)
+        if(digitalVal == 0):
+			GPIO.output(LedPin, GPIO.HIGH)
+			time.sleep(0.2)
         else:
             GPIO.output(LedPin, GPIO.LOW)
 
@@ -30,5 +26,4 @@ if __name__ == '__main__':
 	try:
 		loop()
 	except KeyboardInterrupt: 
-		ADC0832.destroy()
 		print 'The end !'
