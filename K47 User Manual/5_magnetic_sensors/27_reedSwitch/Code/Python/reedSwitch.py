@@ -1,22 +1,20 @@
 #!/usr/bin/env python
 import RPi.GPIO as GPIO
-import ADC0832
 import time
 
-Reed_DO_PIN = 15
+Reed_AO_PIN = 12
 LedPin = 16
-thresholdVal = 100
+
 
 def init():
 	GPIO.setmode(GPIO.BOARD)	
-	GPIO.setup(Reed_DO_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(Reed_AO_PIN, GPIO.IN)
 	GPIO.setup(LedPin, GPIO.OUT)
-	ADC0832.setup()
 	
 def loop():	
     while True:
         global digitalVal, analogVal
-        digitalVal = GPIO.input(Reed_DO_PIN)
+        digitalVal = GPIO.input(Reed_AO_PIN)
         if(digitalVal == 1):
             print 'DO is %d' % digitalVal
 	    analogVal = ADC0832.getResult(0)
