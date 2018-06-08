@@ -1,18 +1,8 @@
-
-ADC0382 Pin position:
-	CS  =====  Raspberry Pi Pin 11
-	CLK =====  Raspberry Pi Pin 12
-	DO =====  Raspberry Pi Pin 13
-	DI =====  Raspberry Pi Pin 13 
-	CH0 ===== Reed Switch Pin A0
-	VCC ===== Raspberry Pi +5V
-	GND ===== Raspberry Pi GND
-
 Reed Switch pin position:
-	D0  ====  Raspberry Pi 15
-	A0  ====  ADC0382 Pin CH0
-	"+" ====  Raspberry Pi +5V
-	GND ====  Raspberry Pi GND
+	A0		Raspberry Pi Pin 11
+	D0		None
+	GND		Raspberry Pi GND 
+	"+"		Raspberry Pi +3.3V
 	
 LED pin position:
 	"S" ==== Raspberry Pi 16 (through resistor)
