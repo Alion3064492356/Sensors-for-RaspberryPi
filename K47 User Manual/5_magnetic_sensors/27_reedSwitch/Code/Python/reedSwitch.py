@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-Reed_AO_PIN = 12
+Reed_AO_PIN = 11
 LedPin = 16
 
 
@@ -16,6 +16,7 @@ def loop():
         global digitalVal
         digitalVal = GPIO.input(Reed_AO_PIN)
         if(digitalVal == 0):
+			print "Magnet detected!"
 			GPIO.output(LedPin, GPIO.HIGH)
 			time.sleep(0.2)
         else:
