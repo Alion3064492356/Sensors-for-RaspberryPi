@@ -13,7 +13,7 @@ This documentation package assumes you own a Raspberry Pi, have installed its OS
 
 2. About This Documentation
 
-This package consists of this Read Me file, which introduces you to Raspberry development using the K47 sensors, and then subfolders describing the many sensors in your kit. These sensor folders contain a variety of information, including wiring diagrams in JPG and CorelDraw formats, sample code in C and Python, and most importantly, a written Description (.docx/.pdf) introducing you to the physics of the sensor and how to interface it to your Raspberry Pi.
+This package consists of this Read Me file, which introduces you to Raspberry development using the K47 sensors, and then subfolders describing the many sensors in your kit. These sensor folders contain a variety of information, including wiring diagrams in JPG, sample code in C and Python, and most importantly, a written Description (.docx/.pdf) introducing you to the physics of the sensor and how to interface it to your Raspberry Pi.
 
 If you are new to working with sensors or interfacing your Raspberry Pi to external hardware components, please see the "Introduction To Sensors" document for help getting started. Even if you are an experienced Raspberry Pi designer, you might briefly consult this document for a quick introduction to all the sensors in this kit.
 
