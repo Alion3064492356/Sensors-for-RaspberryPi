@@ -1,0 +1,9 @@
+Hybrid Reed Switch pin position:
+	A0		Raspberry Pi Pin 11
+	D0		None
+	GND		Raspberry Pi GND 
+	"+"		Raspberry Pi +3.3V
+	
+LED pin position:
+	"S" ==== Raspberry Pi 16 (through resistor)
+	GND ==== Raspberry Pi GND
